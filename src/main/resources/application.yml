@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: music-shop
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+    properties:
+        boot:
+          allow_jdbc_metadata_access: false
+  sql:
+    init:
+      mode: never
