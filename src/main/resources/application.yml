@@ -2,9 +2,9 @@ spring:
   application:
     name: music-shop
   datasource:
-    url: ${DATASOURCE_URL}
-    username: ${DATASOURCE_USERNAME}
-    password: ${DATASOURCE_PASSWORD}
+    url: "jdbc:postgresql://ep-spring-sound-a5808511.us-east-2.aws.neon.tech/music-shop-group-3"
+    username: music-shop_owner
+    password: ZXIr9QuGR3Mt
     driver-class-name: org.postgresql.Driver
   jpa:
     open-in-view: true

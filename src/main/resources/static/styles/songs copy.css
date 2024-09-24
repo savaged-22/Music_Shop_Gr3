@@ -1,9 +1,15 @@
-
 .song-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;         /* Center items horizontally */
+    text-align: center;          /* Center text inside each song-item */
     width: fit-content;
+    margin: 10px;                /* Add some spacing around song items */
+}
+
+.song-item img {
+    border-radius: 5px;          /* Add rounded corners to images */
+    margin-bottom: 10px;         /* Space between image and text */
 }
 
 .link-button {
@@ -35,11 +41,27 @@
 .add-song-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;        /* Center form horizontally */
     width: fit-content;
+    margin: 20px;               /* Add some spacing around the form */
 }
 
 .form-label {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;        /* Space between labels */
+}
+
+.form-label label {
+    margin-bottom: 5px;         /* Space between label and input */
+}
+
+.form-label input,
+.form-label select {
+    width: 100%;                /* Full width for inputs and selects */
+    padding: 8px;              /* Add padding inside inputs and selects */
+    border: 1px solid #ccc;    /* Light border for inputs and selects */
+    border-radius: 4px;        /* Rounded corners */
+    font-size: 14px;           /* Font size */
+    box-sizing: border-box;    /* Ensure padding and border are included in width */
 }

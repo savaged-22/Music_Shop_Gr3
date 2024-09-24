@@ -2,10 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Songs</title>
 
     <link th:href="@{/styles/songs.css}" rel="stylesheet" />
-
 </head>
 <body>
 
@@ -23,9 +23,12 @@
     <li th:each="song : ${songs}">
         <div class="song-item">
             <span th:text="${song.title} + ' - ' + ${song.artist}"></span>
-            <img th:src="${song.albumCover}" th:alt="${song.album}" width="100" height="100"/>
+            <img th:src="@{${song.albumCover}}" th:alt="${song.album}" width="100" height="100"/>
+            <a th:href="@{/songs/delete/{id}(id=${song.id})}" class="button">DELETE</a>
+            <a th:href="@{/songs/edit/{id}(id=${song.id})}" class="button">UPDATE</a>
         </div>
     </li>
 </ul>
+
 </body>
 </html>

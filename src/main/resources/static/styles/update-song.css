@@ -1,0 +1,59 @@
+/* update-song.css */
+
+.update-song-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* Center the form horizontally */
+    width: fit-content;
+    margin: 20px auto;          /* Center form on the page with margin */
+    padding: 20px;              /* Add padding inside the form */
+    border: 1px solid #ddd;     /* Light border around the form */
+    border-radius: 8px;         /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.form-field {
+    margin-bottom: 15px;        /* Space between form fields */
+    width: 100%;                /* Full width for form fields */
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;         /* Space between label and input */
+}
+
+.form-field input {
+    width: 100%;                /* Full width for the input field */
+    padding: 8px;              /* Add padding inside the input field */
+    border: 1px solid #ccc;    /* Light border for the input field */
+    border-radius: 4px;        /* Rounded corners for the input field */
+    font-size: 14px;           /* Font size for the input field */
+    box-sizing: border-box;    /* Include padding and border in the width */
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background for update button */
+    color: white;              /* White text */
+    text-align: center;        /* Center text */
+    text-decoration: none;     /* Remove underline */
+    border-radius: 5px;        /* Rounded corners */
+    font-size: 16px;           /* Font size */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Active state for the submit button */
+.submit-button:active {
+    background-color: #004080; /* Even darker blue when clicked */
+    transform: translateY(1px); /* Slight downward movement */
+}
